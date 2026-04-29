@@ -52,6 +52,7 @@
 
 body {
   margin: 0;
+  font-family: "Special Elite", system-ui;
   background-image: url('./assets/trail-background.png');
   background-size: fixed;
   background-size: cover;

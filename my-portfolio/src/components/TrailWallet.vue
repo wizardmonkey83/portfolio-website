@@ -3,12 +3,16 @@
 </script>
 
 <template>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <section class="wallet-container">
-        <div class="text-box hover">
-            <p>Open Me!</p>
-        </div>
         
         <div class="img-container">
+            <div class="text-box hover">
+                <p>Open Me!</p>
+            </div>
+
             <img :src="trailWallet" class="trail-wallet"/>
         </div>
     </section>
@@ -23,24 +27,15 @@
     }
 
     .text-box.hover {
-        padding: .5rem;
-        background-color: rgb(211, 210, 210);
+        padding: 7px 7px;
+        background-color: rgb(211, 210, 210, 0.5);
+        backdrop-filter: blur(10px);
         font-size: .75rem;
         border-radius: 10%;
-        animation: MoveUpDown 2s linear infinite;
-        position: fixed;
+        position: absolute;
+        top: 265px;
+        left: 42%;
     }
-
-    @keyframes MoveUpDown {
-        0%, 100% {
-            bottom: 0;
-        }
-        50% {
-            bottom: 5px;
-        }
-    }
-
-    
 
     .img-container {
         display: flex;
@@ -48,6 +43,7 @@
         align-items: center;
         height: 800px;
         cursor: pointer;
+        position: relative;
     }
 
     .trail-wallet {
