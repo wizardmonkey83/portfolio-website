@@ -22,6 +22,7 @@ export const menu = [
         filename: "nimbus.txt",
         label: "N.I.M.B.U.S.",
         title: "N.I.M.B.U.S.",
+        tagline: "A prediction market bot looking for an edge in daily temperature markets.",
         tags: ["Python", "SQL", "WebSockets"],
         status: "In Progress",
         last_updated: "08/16/2026",
@@ -39,10 +40,6 @@ export const menu = [
             ]
 
           }
-        ],
-        body: [
-          "N.I.M.B.U.S. strives to gain an edge over other users trading daily temperature contracts on Kalshi.",
-          "In order for N.I.M.B.U.S. to be successful, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models, leading to some prettty messy data management."
         ],
         links: [
           { label: "Live demo", href: "#" }
@@ -134,38 +131,114 @@ export const menu = [
     filename: "experience.txt",
     intro: {
       title: "Experience",
-      lead: "Where I’ve worked, roughly in reverse-chronological order — like a resume that got a little more comfortable with itself.",
+      lead: "Where I’ve worked, in reverse-chronological order.",
       body: [
         "Select a role from the menu or the list below for the longer version."
       ]
     },
     items: [
       {
-        id: "role-one",
-        filename: "company-one.txt",
-        label: "Company One",
-        title: "Software Engineer",
-        tagline: "Company One · 2023 — Present",
-        tags: ["Ownership", "Cross-functional"],
-        body: [
-          "What the role actually involved day-to-day — the team, the product area, the kind of problems that landed on your desk.",
-          "One concrete thing you shipped or improved, with enough specificity that it reads as real rather than a bullet point."
-        ],
-        links: []
+        id: "Maximus",
+        filename: "maximus.txt",
+        label: "Maximus",
+        title: "Software Engineer Intern",
+        tagline: "Maximus | 05/26 - 08/26",
+        tags: ["ETL Pipelines", "Database Management", "Cross-functional"],
+        sections: [
+          { 
+            heading: "Overview", 
+            body: [
+              "N.I.M.B.U.S. strives to gain an edge over other users trading daily temperature contracts on Kalshi."
+            ]
+          },
+          {
+            heading: "What I Accomplished",
+            body: [
+              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+            ]
+          },
+          {
+            heading: "What I Learned",
+            body: [
+              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+            ]
+          },
+          {
+            heading: "Where I Failed",
+            body: [
+              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+            ]
+          }
+        ]
       },
       {
-        id: "role-two",
-        filename: "company-two.txt",
-        label: "Company Two",
-        title: "Junior Developer",
-        tagline: "Company Two · 2021 — 2023",
-        tags: ["Foundations", "Mentorship"],
-        body: [
-          "The earlier chapter — what you learned, who taught you, and what you’d tell yourself on day one if you could.",
-          "A specific project or milestone from this era worth naming."
-        ],
-        links: []
-      }
+        id: "dctav",
+        filename: "dctav.txt",
+        label: "D.C. Tech & Venture Coalition",
+        title: "Software Engineer Intern",
+        tagline: "DCTAV | 01/26 - 04/26",
+        tags: ["Agent Development", "Client Facing"],
+        sections: [
+          { 
+            heading: "Overview", 
+            body: [
+              "N.I.M.B.U.S. strives to gain an edge over other users trading daily temperature contracts on Kalshi."
+            ]
+          },
+          {
+            heading: "What I Accomplished",
+            body: [
+              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+            ]
+          },
+          {
+            heading: "What I Learned",
+            body: [
+              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+            ]
+          },
+          {
+            heading: "Where I Failed",
+            body: [
+              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+            ]
+          }
+        ]
+      },
+      {
+        id: "nsta",
+        filename: "nsta.txt",
+        label: "NSTA",
+        title: "Technical Data Specialist",
+        tagline: "NSTA | 03/25 - 08/25",
+        tags: ["Automation", "Scripting", "Metadata Management"],
+        sections: [
+          { 
+            heading: "Overview", 
+            body: [
+              "N.I.M.B.U.S. strives to gain an edge over other users trading daily temperature contracts on Kalshi."
+            ]
+          },
+          {
+            heading: "What I Accomplished",
+            body: [
+              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+            ]
+          },
+          {
+            heading: "What I Learned",
+            body: [
+              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+            ]
+          },
+          {
+            heading: "Where I Failed",
+            body: [
+              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+            ]
+          }
+        ]
+      },
     ]
   },
   {
