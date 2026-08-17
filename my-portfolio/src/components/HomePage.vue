@@ -27,7 +27,6 @@ onMounted(() => {
 
 <template>
   <section class="page hero">
-    <ImagePlaceholder hint="a portrait or workspace photo" ratio="21 / 9" />
     <h1><span>{{ typed }}</span><span class="cursor" aria-hidden="true">|</span></h1>
     <p class="lead">{{ home.lead }}</p>
   </section>
