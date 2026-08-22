@@ -27,8 +27,8 @@ export const menu = [
         status: "In Progress",
         last_updated: "08/16/2026",
         sections: [
-          { 
-            heading: "Purpose", 
+          {
+            heading: "Purpose",
             body: [
               "N.I.M.B.U.S. strives to gain an edge over other users trading daily temperature contracts on Kalshi."
             ]
@@ -36,6 +36,7 @@ export const menu = [
           {
             heading: "Roadblocks",
             body: [
+              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo.",
               "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
             ]
 
@@ -145,8 +146,8 @@ export const menu = [
         tagline: "Maximus | 05/26 - 08/26",
         tags: ["ETL Pipelines", "Database Management", "Cross-functional"],
         sections: [
-          { 
-            heading: "Overview", 
+          {
+            heading: "Overview",
             body: [
               "N.I.M.B.U.S. strives to gain an edge over other users trading daily temperature contracts on Kalshi."
             ]
@@ -179,8 +180,8 @@ export const menu = [
         tagline: "DCTAV | 01/26 - 04/26",
         tags: ["Agent Development", "Client Facing"],
         sections: [
-          { 
-            heading: "Overview", 
+          {
+            heading: "Overview",
             body: [
               "N.I.M.B.U.S. strives to gain an edge over other users trading daily temperature contracts on Kalshi."
             ]
@@ -213,8 +214,8 @@ export const menu = [
         tagline: "NSTA | 03/25 - 08/25",
         tags: ["Automation", "Scripting", "Metadata Management"],
         sections: [
-          { 
-            heading: "Overview", 
+          {
+            heading: "Overview",
             body: [
               "N.I.M.B.U.S. strives to gain an edge over other users trading daily temperature contracts on Kalshi."
             ]
@@ -266,7 +267,7 @@ export const menu = [
   }
 ]
 
-export function findRoute (hash) {
+export function findRoute(hash) {
   const [categoryId, itemId] = hash.replace("#", "").split("/").filter(Boolean)
   const category = menu.find(c => c.id === categoryId) || menu[0]
   if (itemId && category.items) {

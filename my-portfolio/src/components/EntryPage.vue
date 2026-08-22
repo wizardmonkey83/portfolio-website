@@ -52,7 +52,7 @@ defineEmits(['select-item'])
           <div v-for="section in item.sections" :heading="section.heading">
             <h2 class="subheading">{{ section.heading }}</h2>
             <div v-for="line in section.body">
-              <span class="entry-tagline">{{ line }}</span>
+              <span class="entry-tagline line">{{ line }}</span>
             </div>
           </div>
       </div>
@@ -123,6 +123,11 @@ defineEmits(['select-item'])
   gap: clamp(0.5rem, 0.5vw, 1rem);
   font-size: 0.7rem;
   margin-bottom: 2rem;
+}
+
+.entry-tagline.line {
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .text-bold {
