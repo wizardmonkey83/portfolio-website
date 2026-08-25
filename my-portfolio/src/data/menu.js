@@ -47,22 +47,6 @@ export const menu = [
         ]
       },
       {
-        id: "verifiable-feed",
-        filename: "verifiable-feed.txt",
-        label: "Verifiable-Feed",
-        title: "Verifiable-Feed",
-        tagline: "A build-it-yourself doorbell camera for secure recording.",
-        tags: ["Python", "Computer Vision", "IOS Development", "PostgreSQL"],
-        status: "Planned",
-        body: [
-          "What this one is, in a sentence or two — the shape of the problem, and the shape of the solution.",
-          "What you’d do differently if you rebuilt it today, or the one feature you’re quietly proud nobody’s asked you to remove."
-        ],
-        links: [
-          { label: "View repo", href: "https://github.com/wizardmonkey83/verifiable-feed" }
-        ]
-      },
-      {
         id: "serendipity",
         filename: "serendipity.txt",
         label: "Serendipity",
@@ -98,11 +82,39 @@ export const menu = [
         filename: "betamac.txt",
         label: "Betamac",
         title: "Betamac",
+        image: "betamac_opener.svg",
         tagline: "A multiplayer spin on the original arithmetic game 'Zetamac'.",
         tags: ["Django", "JavaScript", "Redis", "Websockets"],
-        body: [
-          "A brief description of the project — what it automates, replaces, or makes slightly less annoying.",
-          "Context on how it came about: a recurring chore, a curiosity, a bet with a friend."
+        last_updated: "08/24/2026",
+        sections: [
+          {
+            heading: "Overview",
+            body: [
+              "The ability to complete arithmetic of varying levels of difficulty, in quick succession, can help develop reasoning under pressure; a skill which, in my opinion, is pretty helpful for developing one’s problem solving abilities.",
+              "Betamac allows users to solve arithmetic problems, ranging from simple to difficult,  in quick succession. Users can play solo, with others, and if they’re feeling too powerful, with built in distractions."
+            ]
+          },
+          {
+            heading: "Inspiration",
+            body: [
+              "The idea for betamac was heavily influenced by the already popular arithmetic game zetamac(connect link).",
+              "Zetamac functions similarly to Betamac in relation to the core mechanics, but differs when it comes to multiplayer and distraction modes."
+            ]
+          },
+          {
+            heading: "Core Functionality",
+            body: [
+              "When a user visits the site, they are immediately dropped into the homepage where they can configure the game settings. This involves defining number ranges, allowed operations, duration, and distractions (which will play random noises during the match).",
+              "Once configuration is complete, they start the game.",
+              "During the game they’ll solve as many questions as they can in the set duration, with each correct answer resulting in a positive score increment."
+            ]
+          },
+          {
+            heading: "Additional Features",
+            body: [
+              "Betamac also features a multiplayer mode, where the user can join or host a game. A game lobby is created using a “join” code which the host will give to the joiner."
+            ]
+          },
         ],
         links: [
           { label: "View Repo", href: "https://github.com/wizardmonkey83/betamac" },

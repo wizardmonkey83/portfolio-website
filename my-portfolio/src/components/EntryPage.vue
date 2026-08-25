@@ -58,7 +58,7 @@ defineEmits(['select-item'])
       </div>
     </div>
     <div v-if="item.links?.length" class="reveal links">
-      <a v-for="link in item.links" :key="link.label" :href="link.href" class="link-btn">{{ link.label }}</a>
+      <a v-for="link in item.links" :key="link.label" :href="link.href" target="_blank" class="link-btn">{{ link.label }}</a>
     </div>
   </section>
 

@@ -32,7 +32,7 @@ function trigger (action) {
 
 <style scoped>
 .titlebar{
-  position:relative;
+  position:sticky;
   display:flex; align-items:center; gap:.5rem;
   background: var(--titlebar);
   color: var(--titlebar-text);
