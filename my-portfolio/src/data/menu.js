@@ -66,15 +66,48 @@ export const menu = [
         filename: "juicy-codes.txt",
         label: "Juicy Codes",
         title: "Juicy Codes",
+        image: "juicycodes_opener.svg",
         tagline: "A gamefied code-evaluaion platform to help develop programming skills.",
         tags: ["Django", "JavaScript", "Docker", "JUDGE0"],
-        body: [
-          "A brief description of the project — what it automates, replaces, or makes slightly less annoying.",
-          "Context on how it came about: a recurring chore, a curiosity, a bet with a friend."
-        ],
-        links: [
-          { label: "View Repo", href: "https://github.com/wizardmonkey83/juicy-codes" },
-          { label: "Live demo", href: "#" }
+        last_updated: "08/31/2026",
+        sections: [
+          {
+            heading: "Purpose",
+            body: [
+              "Juicy Codes (I’ll admit it’s a weird name) is a code evaluation platform, a lot like LeetCode, that has users solve programming problems related to common DSA concepts. When problems are solved, the user unlocks and/or levels up trading cards relating to the category of the problem (lists, graphs, etc).",
+              "LeetCode is a great way of learning important data structure and algorithm concepts, but I felt it lacked enough “gamification”. This project aims to fill that gap in a way that maintains a focus on learning while introducing some fun."
+            ]
+          },
+          {
+            heading: "Inspiration",
+            body: [
+              "The idea for Juicy Codes emerged from two locations: the first from a desire to build something new and interesting, and the other from a friend from elementary school who drew characters called “Juicy Guys” (it definitely sounds odd now).",
+              "LeetCode was also used heavily for the UI/UX and overall mechanics."
+            ]
+          },
+          {
+            heading: "Site Walkthrough",
+            body: [
+              "When a user visits the site they are immediately prompted to sign up/login. Once their account has been verified, they can navigate to the problem bank, their card gallery (stores progress of cards), profile, and an about section for the site.",
+              "The problem bank stores a list of all problems the site has to offer. The user can search for a problem as well as filter by type and attempt status.",
+              "The card gallery is pretty much just that, a place where users can interact with the cards and easily see their progress."
+            ]
+          },
+          {
+            heading: "Core Functionality",
+            body: [
+              "The main idea of the site is to solve problems. This is done by: reading the presented problem statement, programming a solution, submitting the solution, and seeing if it passes all of the test cases.",
+              "If the solution passes all test cases, the problem is marked as “solved”. If a test case fails, the problem is marked as “attempted”. These statuses are directly tied to a user."
+            ]
+          },
+          {
+            heading: "Cards",
+            body: [
+              "Cards (and the characters they display) are an integral part of the site. A card displays four main things: a character, its level, its category, and a short quote.",
+              "The characters are unique to their DSA category (one for lists, another for graphs, etc). Some of them look pretty eccentric (my favorite’s the cartographer, hashbrowns a close second).",
+              "A cards level represents how many problems, in that cards category, have been solved."
+            ]
+          }
         ]
       },
       {
@@ -91,7 +124,7 @@ export const menu = [
             heading: "Overview",
             body: [
               "The ability to complete arithmetic of varying levels of difficulty, in quick succession, can help develop reasoning under pressure; a skill which, in my opinion, is pretty helpful for developing one’s problem solving abilities.",
-              "Betamac allows users to solve arithmetic problems, ranging from simple to difficult,  in quick succession. Users can play solo, with others, and if they’re feeling too powerful, with built in distractions."
+              "Betamac allows users to solve arithmetic problems, ranging from simple to difficult, in quick succession. Users can play solo, with others, and if they’re feeling too powerful, with built in distractions."
             ]
           },
           {
@@ -128,9 +161,34 @@ export const menu = [
         title: "News-Gen",
         tagline: "A fully autonomous video generation tool with a built-in feedback loop for persistent improvement.",
         tags: ["Python", "Langchain", "GCP", "JavaScript"],
-        body: [
-          "A brief description of the project — what it automates, replaces, or makes slightly less annoying.",
-          "Context on how it came about: a recurring chore, a curiosity, a bet with a friend."
+        last_updated: "08/31/2026",
+        sections: [
+          {
+            heading: "Purpose",
+            body: [
+              "With an increasing emphasis on AI agents and autonomous workflows, a tool that can autonomously create videos at a negligible cost could/would be in high demand depending on the intended user.",
+              "Moreover, a video creation agent that can report on recent, developing news in an area could serve as a summary tool that would be deployed alongside daily news reports."
+            ]
+          },
+          {
+            heading: "Core Functionality",
+            body: [
+              "The tool operates in a step by step system (like anything else I guess).",
+              "First, news reports are gathered either via RSS feeds or “grounding with Google search” a feature of the Gemini API. These reports are then sent to Gemini for synthesis and summarization.",
+              "Another Gemini call is made using the news summary. The response of this call contains a text-to-speech script.",
+              "Now, the news summary and TTS script are used to create the news report video. The video is generated using Google's VEO engine. The voiceover is generated by making a call to ElevenLabs, with the TTS script as the payload. Some post-processing is done on the video to overlay the generated voiceover.",
+              "Once the video is completed, it is stored in a bucket inside of the user's Google Cloud Project (this could be configured to store locally)."
+            ]
+          },
+          {
+            heading: "Additional Features",
+            body: [
+              "NewsGen has a headless version (which runs using an Event Scheduler and Cloud Function) and a GUI for users who prefer to have a more visual process. GUI mode unlocks a few more editing options.",
+              "Automatic posting to social media is also an option. The user can connect various social media profiles to the tool and have NewsGen automatically deploy the video once it’s created."
+            ]
+          }
+
+
         ],
         links: [
           { label: "View Repo", href: "https://github.com/wizardmonkey83/news-gen" }
