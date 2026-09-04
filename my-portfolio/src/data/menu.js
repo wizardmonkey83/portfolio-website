@@ -11,9 +11,9 @@ export const menu = [
     filename: "projects.txt",
     intro: {
       title: "Projects",
-      lead: "A running list of things I’ve built, half-built, and occasionally rebuilt.",
+      lead: "A running list of things I’ve built and half-built (planned ones don't count).",
       body: [
-        "Pick a project from the menu above — or the cards below — to read more about how it works and what it’s made of."
+        "Pick a project from the menu above — or the cards below — to read more about how it works ."
       ]
     },
     items: [
@@ -23,42 +23,50 @@ export const menu = [
         label: "N.I.M.B.U.S.",
         title: "N.I.M.B.U.S.",
         tagline: "A prediction market bot looking for an edge in daily temperature markets.",
+        image: "nimbus_opener.svg",
         tags: ["Python", "SQL", "WebSockets"],
         status: "In Progress",
-        last_updated: "08/16/2026",
+        last_updated: "09/03/2026",
         sections: [
           {
             heading: "Purpose",
             body: [
-              "N.I.M.B.U.S. strives to gain an edge over other users trading daily temperature contracts on Kalshi."
+              "The recent rise in the popularity of prediction markets leaves an interesting, potentially untapped opportunity to profit off of specific markets (primarily ones that are structurally predictable like weather forecasts) using deterministic Python scripts."
             ]
           },
           {
-            heading: "Roadblocks",
+            heading: "How prediction markets work (simplified to fit this project)",
             body: [
-              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo.",
-              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+              "Unlike casinos, which wage their capital against the capital of their patrons, prediction markets pit user against user. This produces two sides of any given market: yes and no (will an event occur or not).",
+              "This means that users set the odds. If the information most users have is outdated or incorrect, then the odds shift in the favor of users who hold the truth."
             ]
 
+          },
+          {
+            heading: "Potential Gap",
+            body: [
+              "My reasoning is since the market volume for markets like “Daily temperature high in NYC” is relatively low, there isn’t incentive for trading firms to enter it. This leaves two groups of traders: traditional ones and algorithmic ones (use bots/scripts to trade).",
+              "Traditional traders are bottlenecked by one main thing: time. No matter how precise their information is, they can only make so many trades in a given period of time. This puts them at an automatic disadvantage to algorithms.",
+              "This leaves algorithmic traders competing for the fastest bot/script. I think that my data collection method is faster than most other bots. Once the data is gathered, the rest of the logic (primarily math functions and sending messages over a websocket connection) runs super fast.",
+              "While this is my plan, I haven’t yet tested the program robustly. Fingers crossed I’m right."
+            ]
+          },
+          {
+            heading: "Core Functionality",
+            body: [
+              "The script itself is pretty simple, with the logic being the hardest part to implement. It has three main sections.",
+              "The first is tasked with data collection. It collects weather data, parses and formats it, and then adds it to the scripts state to be used down the line.", ,
+              "The second performs probability checks. It takes the gathered weather data and reviews the standing of the market to see if a viable edge is present. If an edge is determined, it passes its decision on to another component of the script.",
+              "The third’s duty is to perform trades. If the second section determines an edge, it passes a “trade” signal (along with additional metadata) to this section and a trade is made."
+            ]
+          },
+          {
+            heading: "Additional Features",
+            body: [
+              "This tool requires constant auditing to gauge effectiveness. This is done by saving all trade data, as well as the weather data associated with those trades to a local database. The user can have the program export that data for review periodically.",
+              "Error handling is also super important. In addition to the handling done in the code, whenever an issue arises (like a failed trade request or a program crash) the program sends an email to the user detailing the issue."
+            ]
           }
-        ],
-        links: [
-          { label: "Live demo", href: "#" }
-        ]
-      },
-      {
-        id: "serendipity",
-        filename: "serendipity.txt",
-        label: "Serendipity",
-        title: "Serendipity",
-        tagline: "A social networking app that melds new connections with everyday life.",
-        tags: ["Vue.js", "Node.js", "AWS", "IOS Development"],
-        body: [
-          "A brief description of the project — what it automates, replaces, or makes slightly less annoying.",
-          "Context on how it came about: a recurring chore, a curiosity, a bet with a friend."
-        ],
-        links: [
-          { label: "View Site", href: "arytes.com" }
         ]
       },
       {
@@ -160,6 +168,7 @@ export const menu = [
         label: "News-Gen",
         title: "News-Gen",
         tagline: "A fully autonomous video generation tool with a built-in feedback loop for persistent improvement.",
+        image: "newsgen_opener.png",
         tags: ["Python", "Langchain", "GCP", "JavaScript"],
         last_updated: "08/31/2026",
         sections: [
