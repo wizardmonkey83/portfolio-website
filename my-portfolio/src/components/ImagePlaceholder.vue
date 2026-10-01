@@ -16,7 +16,7 @@ defineProps({
         <circle cx="16" cy="18" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
         <path d="M6 34 L18 22 L26 30 L32 24 L42 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
       </svg>
-      <span class="placeholder-label">Drop in {{ hint }}</span>
+      <span class="placeholder-label">{{ hint }}</span>
     </div>
   </figure>
 </template>

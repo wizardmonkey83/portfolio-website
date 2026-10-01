@@ -364,7 +364,7 @@ export const menu = [
     page: {
       title: "Say hello",
       lead: "Have a project, a role, or just a question — the inbox is open.",
-      email: "hello@example.com"
+      email: "benjamin630@icloud.com"
     }
   }
 ]

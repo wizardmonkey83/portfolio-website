@@ -15,7 +15,6 @@ function onSubmit () {
 <template>
   <section class="page">
     <div class="reveal">
-      <ImagePlaceholder hint="a portrait or workspace photo" ratio="16 / 9" />
       <h1>{{ page.title }}</h1>
       <p class="lead">{{ page.lead }}</p>
     </div>
@@ -36,7 +35,7 @@ function onSubmit () {
       <button type="submit">Send</button>
     </form>
 
-    <p class="reveal fine">Prefer email? Reach me at {{ page.email }} — copy still in progress.</p>
+    <p class="reveal fine">Prefer email? Reach me at {{ page.email }}</p>
   </section>
 </template>
 
