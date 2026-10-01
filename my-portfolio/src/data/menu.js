@@ -221,6 +221,7 @@ export const menu = [
         id: "Maximus",
         filename: "maximus.txt",
         label: "Maximus",
+        image: "maximus_opener.svg",
         title: "Software Engineer Intern",
         tagline: "Maximus | 05/26 - 08/26",
         tags: ["ETL Pipelines", "Database Management", "Cross-functional"],
@@ -228,25 +229,32 @@ export const menu = [
           {
             heading: "Overview",
             body: [
-              "N.I.M.B.U.S. strives to gain an edge over other users trading daily temperature contracts on Kalshi."
+              "I came to work at Maximus (maximus.com), a major government contractor, in the summer of 2026 primarily tasked with a project relating to data observability."
             ]
           },
           {
             heading: "What I Accomplished",
             body: [
-              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+              "I worked on one primary project for the majority of my time at Maximus. This project revolved around building a tool that enabled more detailed observation of ETL pipelines, specifically ones that did not already have logging/visibility systems in place.",
+              "The tool runs with a super minimal config file, so that the user can plug it into any pipeline they want to track, and it discovers table relationships across and between layers (it was geared towards medallion pipelines), performs data quality checks across the pipeline and then generates a document with its findings.",
+              "Another component of the tool was the ability to track the status of the pipeline runs themselves. Connecting to AWS, the tool tracked whether the step functions had run correctly and attached those results to the final report.",
+              "There was an additional feature I built that had AWS Bedrock generate a business-friendly report using the generated document so that non-technical people could use the tool as well.",
+              "All of this was deployed to AWS as a lambda function and was triggered on a cycle using eventbridge. The user could also run the tool locally if they wanted."
             ]
           },
           {
             heading: "What I Learned",
             body: [
-              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+              "Most of my learning came from the exposure to databases and how data moves. I had never worked inside of a major DB and had little prior knowledge of how pipelines were configured and managed. Due to this lack of experience, I was able to develop my system design and architectural knowledge.",
+              "I also understood the benefits of efficient code. Since the tool had to discover relationships between tables it needed to query the database in order to find out information. These queries needed to be optimized if the tool was going to run on multiple pipelines in the same lambda function. It was one of the first times the way in which I wrote code mattered.",
+              "Aside from technical stuff, I developed my soft skills immensely. This was the first time I had worked inside an office and I really enjoyed being able to interact with people, ask questions, and learn from others."
             ]
           },
           {
             heading: "Where I Failed",
             body: [
-              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+              "The number one thing I could’ve improved was my presentation skills. I had to give many presentations, ranging from basic check-ins to elaborate summaries of my work. I didn’t practice for these nearly as much as I should’ve resulting in less than optimal showcases.",
+              "Next time I’m going to put the bravado aside and do some mock run-throughs."
             ]
           }
         ]
@@ -255,6 +263,7 @@ export const menu = [
         id: "dctav",
         filename: "dctav.txt",
         label: "D.C. Tech & Venture Coalition",
+        image: "dctav_opener.svg",
         title: "Software Engineer Intern",
         tagline: "DCTAV | 01/26 - 04/26",
         tags: ["Agent Development", "Client Facing"],
@@ -262,7 +271,7 @@ export const menu = [
           {
             heading: "Overview",
             body: [
-              "I came to work at DCTAV (dctav.co), an organization that works to build up tech companies in the D.C. area, in the Winter/Spring of 2026 tasked with building an agentic-geared MVP."
+              "I came to work at DCTAV (dctav.co), an organization that works to build up tech companies in the D.C. area, in the winter/spring of 2026 tasked with building an agentic-geared MVP."
             ]
           },
           {
@@ -294,6 +303,7 @@ export const menu = [
         id: "nsta",
         filename: "nsta.txt",
         label: "NSTA",
+        image: "nsta_opener.svg",
         title: "Technical Data Specialist",
         tagline: "NSTA | 03/25 - 08/25",
         tags: ["Automation", "Scripting", "Metadata Management"],
@@ -340,8 +350,10 @@ export const menu = [
       title: "About Me",
       lead: "A little bit about who’s behind this notepad.",
       body: [
-        "This is the part where you write two or three paragraphs about yourself — how you got into this work, what you care about, and what you’re looking for next.",
-        "Feel free to let some personality through here. The rest of the site already has — no reason to go stiff now."
+        "The purpose of a portfolio is to let people find out who you are. While I’ve gone over technical stuff, I haven’t really covered who I am outside of computer science.",
+        "I really enjoy the outdoors in any capacity although, more specifically, I enjoy backpacking, mountain biking, and rock climbing. Hiking is pretty fun too.",
+        "I like to play sports, mainly soccer and climbing but ping pong and tennis are regulars as well.",
+        "Video games are another area of enjoyment, particularly Destiny 2 at the moment. I’m working my way through the Lightfall DLC and am stuck on a bossfight that’s making me reconsider the game altogether."
       ]
     }
   },
