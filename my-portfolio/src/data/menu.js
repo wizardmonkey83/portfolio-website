@@ -262,25 +262,30 @@ export const menu = [
           {
             heading: "Overview",
             body: [
-              "N.I.M.B.U.S. strives to gain an edge over other users trading daily temperature contracts on Kalshi."
+              "I came to work at DCTAV (dctav.co), an organization that works to build up tech companies in the D.C. area, in the Winter/Spring of 2026 tasked with building an agentic-geared MVP."
             ]
           },
           {
             heading: "What I Accomplished",
             body: [
-              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+              "The project I was tasked with at DCTAV revolved around creating an automated video generation workflow, specifically for daily news feeds.",
+              "The idea was an agent runs daily, collecting up-to-date news, generating a “newscast” style video summarizing recent events, and then publishing the video to social media and alongside daily news feeds as a supplemental source of information.",
+              "I built out the agent using LangChain to orchestrate the steps and deployed it on Google Cloud Platform so that it could run autonomously. I also constructed a simple GUI for non-technical demos of the product."
             ]
           },
           {
             heading: "What I Learned",
             body: [
-              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+              "The things that I learned the most about were cloud concepts, storage, and error handling (particularly how it relates to API calls).",
+              "This was the first time I had really worked in a cloud platform and it took a while to untangle the web that is GCP. I learned mainly about access control, managing resources, and scaling concerns.",
+              "Storage was another point of learning as I needed to decide how to store all of the data collected/generated. I ended up going with Firestore for state checkpointing and a simple bucket for storing generated videos.",
+              "This project also had me make choices between different services/tools which I hadn’t had to do before. I learned that choosing services that are compatible with the broader project is the best way to go."
             ]
           },
           {
             heading: "Where I Failed",
             body: [
-              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+              "Looking back, I realize I could have been more efficient. I spent a lot of time in the weeds debugging code that could have been aided by AI tools and it ended up having me ship at a slower rate."
             ]
           }
         ]
@@ -296,25 +301,31 @@ export const menu = [
           {
             heading: "Overview",
             body: [
-              "N.I.M.B.U.S. strives to gain an edge over other users trading daily temperature contracts on Kalshi."
+              "I came to work at NSTA (nsta.org) in my second semester of college, doing mostly metadata management and automation work."
             ]
           },
           {
             heading: "What I Accomplished",
             body: [
-              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+              "I came to NSTA during a time of significant change for the organization. They were going through a major transition between distributors which required the successful transfer of a plethora of data.",
+              "I was initially tasked with doing rudimentary data entry that consisted of taking book metadata from the old system and inputting it into the new one. I was still pretty new to this whole “computer science” thing, but I immediately knew that this process could be automated using the power of code.",
+              "Over the course of a week or two I developed a solid plan to automate the transfer process and wrote a Python script to take metadata from the old system, alter its format for it to be compatible with the new system, and then send it using an API request.",
+              "This system worked well and allowed me to automate a decent portion of my work. This increase in productivity then, in turn, allowed me to take on more tasks."
             ]
           },
           {
             heading: "What I Learned",
             body: [
-              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+              "This system worked well and allowed me to automate a decent portion of my work. This increase in productivity then, in turn, allowed me to take on more tasks.",
+              "For one, I learned a lot about scripting and data validation. Writing scripts allowed me to develop my error handling skills and made me understand how data is malleable to certain needs.",
+              "I also learned how to deal with obscure documentation. The schema used for the data validation had obscure documentation that required me to do a deep dive whenever I discovered an issue."
             ]
           },
           {
             heading: "Where I Failed",
             body: [
-              "In order for N.I.M.B.U.S. to operate successfully, it needs to be fast. This required me to write logic that pulled weather forcasts directly from NOAA's ensemble models instead of getting it from simple REST API wrappers like OpenMeteo."
+              "While I grew steadily, my first bout of professional experience was not all sunshine and rainbows. This inexperience showed less in the quality of my work, but, rather, in my ability to communicate effectively.",
+              "Looking back, I wish I would’ve been more proactive about sending updates, asking questions, and explaining my work in a more understandable manner."
             ]
           }
         ]
